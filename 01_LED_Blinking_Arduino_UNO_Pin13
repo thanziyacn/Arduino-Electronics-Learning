@@ -1,0 +1,60 @@
+# Experiment 01: LED Blinking Using Arduino UNO Pin 1
+
+## Board
+Arduino UNO R3
+
+## Pin Used
+Digital Pin 13 (Built-in LED – L)
+
+## Components Required
+- Arduino UNO R3
+- USB Cable
+- Computer with Arduino IDE
+
+## Working Principle
+Pin 13 is configured as an output. The Arduino sends HIGH and LOW signals alternately to control the onboard LED.
+
+## Arduino Code
+
+
+void setup() {
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+
+  digitalWrite(13, LOW);
+  delay(1000);
+}
+
+## Code Explanation
+- pinMode(13, OUTPUT) – Configures digital pin 13 as an output.
+- digitalWrite(13, HIGH) – Turns ON the built-in LED.
+- delay(1000) – Waits for 1 second.
+- digitalWrite(13, LOW) – Turns OFF the built-in LED.
+- loop() – Repeats the operation continuously.
+
+## Working Sequence
+1. Arduino initializes digital pin 13 as OUTPUT.
+2. LED turns ON.
+3. Arduino waits for 1 second.
+4. LED turns OFF.
+5. Arduino waits for 1 second.
+6. The sequence repeats continuously.
+
+## ON Time
+1 second (1000 milliseconds)
+
+## OFF Time
+1 second (1000 milliseconds)
+
+## Expected Result
+The onboard LED marked L on the Arduino UNO blinks continuously at one-second intervals.
+
+
+
+
+
+
